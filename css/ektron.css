@@ -1,0 +1,43 @@
+.ux-app-siteApp-designMode.pageBuilderEditMode #body-content [data-ux-pagebuilder-dropzone-data*="\"IsDropZoneEditable\":true"] [data-ux-pagebuilder="Column"] [data-ux-pagebuilder-widget-data] .ux-app-siteApp-widgetHeader .actions a {
+    color: #fff;
+    float: left;
+    height: 100%;
+    text-decoration: none;
+}
+
+.ux-app-siteApp-designMode.pageBuilderEditMode #body-content [data-ux-pagebuilder-dropzone-data*="\"IsDropZoneEditable\":true"] [data-ux-pagebuilder="Column"] .ux-app-siteApp-columnHeader .actions a {
+    color: #fff;
+    float: left;
+    height: 100%;
+    text-decoration: none;
+}
+
+#body-content [data-ux-pagebuilder="Column"] > ul, #body-content [data-ux-pagebuilder="Column"] > ol {
+    border: 0 solid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#body-content [data-ux-pagebuilder="Column"] > ul > li {
+    margin: 0;
+    padding-top: 0;
+}
+
+.margin10right ul {
+    list-style-type:square;
+}
+
+[data-ux-pagebuilder="Column"] {
+    float:left;
+    margin:0;
+}
+
+.column [data-ux-pagebuilder="Column"] {
+	float: none;
+}
+
+div[data-ux-pagebuilder="Column"]:after, div[data-ux-pagebuilder="DropZone"]:after {
+content:’’;
+display:block;
+clear:both;
+}
