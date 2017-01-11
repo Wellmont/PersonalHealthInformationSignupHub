@@ -1,0 +1,731 @@
+/* 
+Client: Wellmont Health System
+Author: Jeffery Moore
+*/
+body { 
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	margin: 0; 
+	background-color: #437292;
+	color: #424242;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+.clearboth { clear: both; }
+#EIT_abody
+{
+    /*width:460px;*/
+    display:inline-block;    
+    word-wrap:break-word;
+    max-width:100%;
+}
+
+#EIT_footer { display:inline-block; }
+
+.eit_secsec img
+{
+    float:right;    
+}
+.readMore {
+	width: 63px;
+	height:	10px;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: url(images/btn_readMore.gif) no-repeat top right;
+	margin-left: -1px;
+}
+.readMore.justMore { width: 35px; }
+.bold { font-weight: bold; }
+.inline { display: inline; }
+
+#flashcontent,
+a, a:link, a:visited, a:active,
+a img, a:link img, a:visited img, a:active img { outline: none; border:0; }
+
+#flashvideo { height: 358px; }	/*fix ie issue with video divs resizing upon embedding of .swf by swfobject:*/
+
+/* vertical centering */
+.v-outer {
+	display: table;
+	overflow: hidden;
+	height: 100px;
+}
+.v-middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+/***********************************/
+/*             SHELL               */
+/***********************************/
+#header-inner-shell {
+    margin:0 auto;
+    position:relative;
+    display:table;
+	width:100%;
+	max-width:1030px;
+}
+#outer-shell { background: #ffffff url(images/layout/header_bg.gif) repeat-x top; }
+#inner-shell,
+#footer-inner-shell {
+	padding-top: 16px;
+	margin: 0 auto;
+	width: 952px;
+}
+
+#facebook-shell {
+	padding-top: 16px;
+	margin: 0 auto;
+	width: 810px!important;
+	background: #FFF;
+}
+
+#column-left {
+	float: left;
+	width: 224px;
+	padding: 15px 0;
+	margin-bottom: 11px;
+}
+#body-content {
+	float: left;
+	/*width: 718px;*/
+	padding-bottom: 36px;
+	/*background: #aaaaaa;*/
+}
+
+
+/***********************************/
+/*             HEADER              */
+/***********************************/
+
+#search {
+	padding-top: 2px;
+	text-align: right;
+	background: transparent url(images/layout/header_searchBar.gif) no-repeat center right;
+}
+#search div { display: inline; }
+#search input {
+	border: none;
+	vertical-align: middle;	
+	background-color: transparent;
+	/*border: 1px solid #ff0000;*/
+}
+#search .txt-shell input {
+	color: #aaaaaa;
+	font-size: 10px;
+	width: 136px;
+	height: 16px;
+}
+#search .btn-shell input {
+	width: 61px;
+	height: 20px;
+	cursor: pointer;
+	/*hide search button text as we are using a bg image for this entire widget*/
+	padding-left: 2px;
+	font-size: 1px;
+	text-align: left;
+	color: #525252;
+}
+#logo {
+	float: left;
+    margin-top:38px;
+	/*fix IE 6 issue*/
+	_margin-left: -1px;
+	_position: relative;
+	_left: 10px;
+}
+#logo a {
+	background: transparent url(images/layout/header_logo.gif) no-repeat;
+	display: block;
+	width: 157px;
+	height: 70px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin-top: -5px;
+}
+
+.header-nav {
+    position:absolute;
+    right:185px;
+}
+#search {
+    position: absolute;
+	display: block;
+	right:0px;
+    width:205px;
+}
+
+#nav-main, #footer-inner-shell {
+	position: relative;
+	display: block;
+	right: 19px;
+	_right: 20px;
+}
+
+
+/***********************************/
+/*            TOP NAV              */
+/***********************************/
+
+    .nav-main .header-nav ul {
+        margin: 1px 0 0 0;
+        padding: 0 35px 0 0;
+    }
+    .nav-main .header-nav ul li {
+        margin: 2px 0;
+        padding:0 6px;
+        float:left;
+        list-style:none;
+        border-right:1px solid #ffffff;
+    }
+    .nav-main .header-nav ul li a {
+        font-size:11px;
+    }
+    .nav-main .header-nav ul li.last {
+        border:none;
+    }
+
+#nav-main {	float: right; padding-bottom: 32px; }
+#nav-main ul { margin-top: 34px; }
+#nav-main ul li {
+	margin-left: 38px;
+	_margin-left: 33px;		/*fix IE6 issue*/
+	float: left; 
+	list-style: none;
+}
+#nav-main ul li.first { margin-left: 0; }
+#nav-main ul li a {
+	background-repeat: no-repeat;
+	display: block;
+	height: 15px;
+	text-indent: -9999px;
+	overflow: hidden;
+	float: left;
+}
+#nav-main ul li a,
+#nav-main ul li a:link,
+#nav-main ul li a:active,
+#nav-main ul li a:visited { outline: none; }
+
+
+/***********************************/
+/*     TOP NAV IMG REPLACEMENT     */
+/***********************************/
+
+#nav-main ul li a#MyWellmont {
+	background-image: url(images/layout/nav_top_myWellmont.gif);
+	width: 80px;
+	margin-right: 1px; /*causes nav items to be aligned with content on left side*/
+}
+#nav-main ul li a#MyWellmont:hover,
+#nav-main ul li.selected a#MyWellmont {
+	background-image: url(images/layout/nav_top_myWellmont_active.gif);
+}
+
+#nav-main ul li a#FindaPhysician {
+	background-image: url(images/layout/nav_top_findAPhysician.gif);
+	width: 109px;
+}
+#nav-main ul li a#FindaPhysician:hover,
+#nav-main ul li.selected a#FindaPhysician {
+	background-image: url(images/layout/nav_top_findAPhysician_active.gif);
+}
+
+#nav-main ul li a#MedicalServices {
+	background-image: url(images/layout/nav_top_medicalServices.gif);
+	width: 109px;
+}
+#nav-main ul li a#MedicalServices:hover,
+#nav-main ul li.selected a#MedicalServices {
+	background-image: url(images/layout/nav_top_medicalServices_active.gif);
+}
+
+#nav-main ul li a#Hospitals {
+	background-image: url(images/layout/nav_top_hospitals.gif);
+	width: 59px;
+}
+#nav-main ul li a#Hospitals:hover,
+#nav-main ul li.selected a#Hospitals {
+	background-image: url(images/layout/nav_top_hospitals_active.gif);
+}
+
+#nav-main ul li a#Patients-Visitors {
+	background-image: url(images/layout/nav_top_patientsAndVisitors.gif);
+	width: 119px;
+}
+#nav-main ul li a#Patients-Visitors:hover,
+#nav-main ul li.selected a#Patients-Visitors {
+	background-image: url(images/layout/nav_top_patientsAndVisitors_active.gif);
+}
+
+#nav-main ul li a#Careers {
+	background-image: url(images/layout/nav_top_careers.gif);
+	width: 48px;
+}
+#nav-main ul li a#Careers:hover,
+#nav-main ul li.selected a#Careers {
+	background-image: url(images/layout/nav_top_careers_active.gif);
+}
+
+/***********************************/
+/*            LEFT NAV             */
+/***********************************/
+
+#nav-sec {
+	width: 187px;
+	margin-right: 37px;
+	background: #ebebeb url(images/layout/nav_left_bg_top.gif) no-repeat top left;
+	margin-bottom: 22px;
+}
+#nav-sec-inner { 
+	padding: 13px 7px;
+	width: 173px;
+    box-sizing: content-box;
+	background:  url(images/layout/nav_left_bg_bottom.gif) no-repeat bottom left;
+	*float: left;
+}
+#nav-sec ul {
+	margin: 0;
+	padding: 0;
+}
+#nav-sec ul li {
+	list-style: none;
+	font-size: 11px;
+	line-height: 13px;
+	margin: 0;
+	padding: 3px 0;
+}
+#nav-sec a {
+	color: #3a3a3a;
+	text-decoration: none;
+	padding: 3px 0;
+	padding-right: 13px;
+}
+#nav-sec a:hover,
+#nav-sec * a:hover {
+	text-decoration: underline;
+	*text-decoration: none;		/* turn off underlines for IE since the IE dev team was taking a lot of acid */
+}
+#nav-sec a,
+#nav-sec a:link,
+#nav-sec a:active,
+#nav-sec a:visited { outline: none; }
+
+/* Sub Menus */
+#nav-sec ul li.selected.children_level2 {
+	padding-left: 11px;
+	background: #2673a8 url(images/layout/nav_left_submenu_bg_top.gif) no-repeat top left;
+	margin-left: -13px;
+	margin-top: 3px;
+	margin-bottom: -3px;
+}
+#nav-sec ul li.selected.children_level2 a { color: #ffffff; }
+
+#nav-sec ul.submenu  {
+	background: #d2dadf;
+	margin-bottom: 6px;
+	*margin-bottom: -13px;
+}
+#nav-sec ul.submenu li {
+	padding-left: 18px;
+}
+#nav-sec li.selected.nochildren_level4,
+#nav-sec li.selected.children_level3,
+#nav-sec li.selected.nochildren_level2,
+#nav-sec ul.submenu li.selected.nochildren_level3 {
+	font-weight: bold;
+}
+#nav-sec ul.submenu li:first-child { padding-top: 12px; }
+#nav-sec ul.submenu li:last-child { 
+	background: #d2dadf url(images/layout/nav_left_submenu_bg_bottom.gif) no-repeat bottom left;
+	padding-bottom: 17px;
+}
+#nav-sec ul { margin-left: 13px; }
+#nav-sec ul.submenu  { margin-left: -13px; }
+
+
+/***********************************/
+/*          RELATED LINKS          */
+/***********************************/
+
+#related-links {	
+	background: url(images/layout/nav_left_related_bg_middle.gif) repeat-y;
+	*position: relative; /*fix IE6 bug*/
+}
+#related-links-outer {
+	margin: -16px 0 20px 0;
+	background: url(images/layout/nav_left_related_bg_bottom.gif) no-repeat left bottom;
+	*padding-bottom: 1px;	/*fix IE6/7 bug introduced by the bug fix above*/
+}
+#related-links-inner {
+	background: url(images/layout/nav_left_related_bg_top.gif) no-repeat;
+}
+#related-links h3 {
+	background: url(images/layout/nav_left_related_header.gif) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+	width: 95px;
+	height: 12px;
+	padding: 0;
+	margin: 8px 0 14px 0;
+}
+#related-links ul { 
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding: 10px 20px 15px 20px;
+}
+#related-links ul a {
+	color: #5e5e5e;
+	font-size: 11px;
+	width: 148px;
+	display: block;
+	padding-bottom: 6px;
+}
+#related-links ul a:hover { color: #2673a8; }
+
+/***********************************/
+/*       LEFT COLUMN BANNERS       */
+/***********************************/
+
+#banners h3 a {
+	width: 187px;
+	height: 75px;
+	margin-bottom: 12px;
+	display: block;
+	text-indent: -9999px;
+	outline: 0;
+}
+#banners #banner-HeartSHAPE { background: url('/uploadedImages/Banners/HeartSHAPE-Side-Banner.jpg') no-repeat; }
+#banners #banner-Sleep-Medicine { background: url('/uploadedImages/Banners/9097-Sleep-Medicine-Side-Banner.jpg') no-repeat; }
+#banners #banner-Wellmont-Medical-Associates { background: url('/uploadedImages/Banners/Wellmont-Medical-Associates-SideBanner.jpg') no-repeat; }
+#banners #banner-wuc { background: url('/uploadedImages/Banners/9210-WUC-Side-Banner.jpg') no-repeat; }
+#banners #banner-video-library { background: url('/uploadedImages/video-banner2011-.jpg') no-repeat; }
+#banners #banner-nurse-connection { background: url('/uploadedImages/nc-banner2011.jpg') no-repeat; }
+
+
+	
+/***********************************/
+/*         SEARCH RESULTS          */
+/***********************************/
+
+#SearchResults .ResultSet {	white-space: normal; }
+#SearchResults .ResultSet .ResultTitle {
+	margin-bottom: -15px;
+	margin-top: 15px;
+	font-size: 1.2em
+}
+#SearchResults .ResultSet .ResultStamp { font-size: .8em } 
+#SearchResults .ResultSet .ResultTeaser {
+	font-size: 1.1em;
+	width: 400px;
+}
+#navbar .ektronPaging li {
+	display: inline;
+	margin: 5px;
+	font-size: 1.1em;
+}
+
+
+/***********************************/
+/*             FOOTER              */
+/***********************************/
+
+#footer-outer-shell {
+	background: url(images/layout/footer_bg.gif) repeat-x top;
+	*position: relative; /*keep footer in correct place in IE upon dynamic content changes*/
+}
+#footer-inner-shell {
+	font-size: 11px;
+	text-align: right;
+	padding-bottom: 26px;
+}
+#footer-inner-shell ul { margin: 0; }
+#footer-inner-shell li {
+	list-style: none;
+	display: inline;
+	line-height: 16px;
+}
+#footer-inner-shell li ul { overflow:hidden; display:none; }
+#footer-inner-shell li:first-child { background: none; }
+#footer-inner-shell a {
+	text-decoration: none;
+	color: #ffffff;
+}
+#footer-inner-shell a:hover { text-decoration: underline; }
+
+#nav-footer li {
+	background: url(images/layout/nav_bottom_divider_white.gif) no-repeat 0 5px;
+	padding-left: 14px;
+	margin-left: 12px;	
+}
+#copy-smaller { padding-top: 12px; }
+#copy-smaller li {
+	background: url(images/layout/nav_bottom_divider_black.gif) no-repeat 0 4px;
+	margin-left: 9px;
+	padding-left: 13px;
+}
+#copy-smaller ul {
+	color: #000000;
+	clear: both;
+}
+#copy-smaller a { color: #000000; }
+#footer-inner-shell li ul {
+	display:none;
+}
+
+
+/* Modal Popup */
+
+.modalBackground {
+	background-color: Gray;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+.modalPopup {
+	background-color: #ffffff;
+	border: 1px solid #484848;
+	padding: 20px;
+	text-align: left;
+}
+#ctl00_ContentPlaceHolder1_Panel1_DropShadow { display: none; }
+
+
+/*STYLES ADDED*/
+
+/***********************************/
+
+/*            TOP NAV              */
+
+/***********************************/
+
+.nav-main {
+	float: right;
+	padding-bottom: 27px;
+	/*width:771px;*/
+	margin-left:4px;
+    margin-top:16px;
+    margin-right:10px;
+    position:relative;
+}
+.nav-main ul {
+	margin-top: 53px;
+	float:left;
+	padding-left:17px;
+    padding-bottom:15px;
+}
+.nav-main ul li {
+	margin-right: 30px;
+	float: left;
+	list-style: none;
+	position:relative;
+}
+.nav-main ul li.noMargin {
+	margin-right:0;
+}
+.nav-main ul li a {
+	color:#c0c0c0;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	font-size:14px;
+}
+.nav-main ul li a:hover, .nav-main ul li.selected > a {
+	color:#fff;
+}
+.nav-main ul li a, .nav-main ul li a:link, .nav-main ul li a:active, .nav-main ul li a:visited {
+	outline: none;
+}
+.nav-main ul li ul.dropdown {
+	display:none;
+	position:absolute;
+	left:0;
+	top:22px;
+	margin-top:5px;
+	padding:5px 0 0 0;
+	border:#515151 solid 1px;
+	border-top:none;
+	width:160px;
+}
+.nav-main ul li ul.dropdown li {
+	margin:0;
+	float:none;
+	border-bottom:#515151 solid 1px;
+}
+.nav-main ul li ul.dropdown li.last {
+	border-bottom:none;
+}
+.nav-main ul li ul.dropdown li a {
+	font-size:12px;
+	padding:6px 5px 6px 0px;
+	position:relative;
+	overflow:hidden;
+	display:block;
+	background:#343434 url(bullet.jpg) no-repeat 7px 12px;
+	filter: alpha(opacity=90);
+	opacity: .9;
+	-moz-opacity:0.9;
+    *margin-top:-2px;
+}
+.nav-main ul li ul.dropdown li a:hover {
+	background-color:#343434;
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-moz-opacity:1;
+}
+/*END TOP NAV*/
+
+div.pageContent{
+	overflow:hidden;
+}
+/*--------------------------*/
+/*PAGE BUILDER STYLES*/
+/*---------------------------*/
+div.Column01, div.Column02, div.Column03{
+	float:left;
+	overflow:hidden;
+	background-color:#F00;
+}
+
+/*----STYLES TO TEMPLATE 2---*/
+div.model2{
+	overflow:hidden;
+}
+
+div.model2 div.Column01{
+	width:228px;
+	margin:38px 37px 0 0;	
+}
+
+div.model2 div.Column02{
+	width:420px;
+	margin:38px 37px 0 0;	
+}
+
+div.model2 div.Column03{
+	width:228px;
+	margin:38px 0 0 0;	
+}
+
+/*----STYLES TO TEMPLATE 3---*/
+div.model3{
+	overflow:hidden;
+}
+
+div.model3 div.Column01{
+	width:292px;
+	margin:38px 37px 0 0;	
+}
+
+div.model3 div.Column02{
+	width:294px;
+	margin:38px 37px 0 0;	
+}
+
+div.model3 div.Column03{
+	width:292px;
+	margin:38px 0 0 0;	
+}
+
+/*----STYLES TO TEMPLATE 4---*/
+div.model4{
+	overflow:hidden;
+}
+
+div.model4 div.Column01{
+	width:952px;
+	margin:38px 0 0 0;	
+}
+
+/*#body-content, #column-left
+{
+    padding-top:0;
+}*/
+#newsAndEvents span
+{
+    padding-bottom:0;
+    font-weight:normal;
+    line-height:12px;
+    padding-bottom:5px;
+}
+
+/* Contact Form Styles */
+#body-content .contactForm {width: 714px;}
+#body-content .contactForm label {display:block; float:left; width: 90px; margin: 0 10px 0 0;}
+#body-content .contactForm input,
+#body-content .contactForm textarea, 
+#body-content .contactForm select {width: 200px;padding: 2px 3px;border: 1px solid #444; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px}
+#body-content .contactForm select {width: 207px;}
+#body-content .contactForm .formRow {margin: 0 0 10px; clear: both;}
+#body-content .contactForm .submitRow {margin-left:100px; clear:both; padding: 10px 0 0 0;}
+#body-content .contactForm .submitRow input{background: #bbb; color: #222; border: 1px solid #777;padding: 3px 4px;width: 80px;}
+#body-content .contactForm .requiredMarker {color: #ff0000;}
+#body-content .contactForm .col1  {float:left; width: 49%; margin-right: 2%;}
+#body-content .contactForm .col2 {float:left; width: 49%;}
+#body-content .contactForm .geneticCouncelingForm {background:#e2dfda url(images/layout/form_tan_bg_top.png) no-repeat top;}
+#body-content .contactForm .geneticCouncelingForm .geneticCouncelingFormInner {background: url(images/layout/form_tan_bg_bottom.png) no-repeat bottom;padding: 15px;} 
+#body-content .contactForm .highRiskForm {background: #dae0e4 url(images/layout/form_blue_bg_top.png)  no-repeat top;}
+#body-content .contactForm .highRiskForm .highRiskFormInner{background: url(images/layout/form_blue_bg_bottom.png) no-repeat bottom;padding: 15px;}
+#body-content .contactForm h3 {margin-top:0;margin-bottom: 10px;}
+
+.clear {clear:both;}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hides Mobile Nav for IE8*/
+.mobile-nav{
+	display:none;
+}
+
+#login-rotate {
+	padding-left:initial;
+	right:20px;
+	z-index:10;
+}
+
+@media (max-width: 767px) {
+	#login-rotate {
+		right:initial;
+		position:relative;
+		height:auto;
+	}
+	.login-form { width:100%; }
+}
+
+/*sidebar button styles*/
+.sidebarBtn {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 198px;
+    padding: 8px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.sidebarBtn.green { background-color: rgb(90, 150, 9); }
+.sidebarBtn.gray { background-color: #888b8d; }
+.sidebarBtn.red { background-color: #9c173a; }
+.sidebarBtn.blue { background-color: #1f6ca1; }
+
+.greenTxt { color: rgb(101, 141, 27); }
+.gratTxt { color: #888b8d; }
+.redTxt { color: #9c173a; }
+.blueTxt { color: #1f6ca1; }
+
+/*sidebar module*/
+.constrainWidth { 
+    max-width: 230px; 
+    margin-left:auto; 
+    margin-right:auto; 
+}
