@@ -1,0 +1,918 @@
+/* 
+Client: Wellmont Health System
+Author: Jeffery Moore
+*/
+
+/***********************************/
+/*          BODY CONTENT           */
+/***********************************/
+#one-column-content h1, 
+#one-column-content h2, 
+#one-column-content h3, 
+#one-column-content h4, 
+#one-column-content h5, 
+#one-column-content h6, 
+#one-column-content p, 
+#one-column-content ul,
+#body-content h1, 
+#body-content h2, 
+#body-content h3, 
+#body-content h4, 
+#body-content h5, 
+#body-content h6, 
+#body-content p, 
+#body-content ul  {
+	margin: .5em 0 1em 0;
+	padding: 0;
+}
+#one-column-content,
+#body-content {
+	padding-top: 18px;
+	*padding-top: 30px;
+}
+#one-column-content,
+#one-column-content p,
+#body-content,
+#body-content p {
+	line-height: 1.6em;
+}
+#one-column-content h1,
+#body-content h1 {
+	color: #2673a8;
+	font-size: 22px;
+	font-weight: bold;
+}
+#one-column-content h2,
+#body-content h2 {
+	color: #484848;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 1.6em;
+	margin-bottom: 0;
+}
+#one-column-content h3,
+#body-content h3 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 1.6em;
+	margin-bottom: 0;
+}
+#one-column-content h3.content-related-links,
+#body-content h3.content-related-links {
+	text-transform: uppercase;
+	padding: 20px 0 10px 0;
+}
+#one-column-content p,
+#body-content p {
+	padding: .25em 0;
+}
+#one-column-content a,
+#one-column-content .link,
+#body-content a,
+#body-content .link {
+	color: #2673a8;
+	text-decoration: underline;
+	font-weight: bold;
+}
+#one-column-content ul li,
+#body-content ul li { line-height: 1.5em; }
+#one-column-content ul,
+#body-content ul { padding: 0 2.35em; }
+
+#one-column-content hr,
+#body-content hr {
+	width: 100%;
+	height: 0;
+	border: 0;
+	border-bottom: 1px dashed;
+	color: #2673a8;
+	clear: both;
+}
+
+#one-column-content h2.signature,
+#body-content h2.signature {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	font-size: 19px;
+}
+#one-column-content p.singlespace,
+#body-content p.singlespace { line-height: 1.5em; }
+
+#one-column-content td,
+#body-content td {
+	padding: 3px;
+}
+
+/*
+commented this stuff out so it doesnt break http://www.wellmont.org/general.aspx?id=92 later.
+we had to do these styles inline because of server access issues. it may not get re-posted correctly when the time comes, so this stuff is commented out for now
+
+#body-content ul.accordion {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
+#body-content ul.accordion li.accordion-item {
+	background: url('images/content/accordion_border.gif') repeat-x left bottom;
+	padding: 6px 0;
+}
+#body-content ul.accordion li a.accordion-nav-item {
+	background: url('images/content/accordion_arrow_left.gif') no-repeat 0 5px;
+	padding: 0 20px;
+	font-size: 14px;
+	cursor: pointer;
+}
+#body-content ul.accordion li.open a.accordion-nav-item {
+	background-image: url('images/content/accordion_arrow_down.gif');
+}
+#body-content ul.accordion li.accordion-item div {
+	display: none;
+	background: url('images/content/accordion_border.gif') repeat-x left top;
+}
+#body-content ul.accordion li.accordion-item.open div {
+	display: block;
+	padding-top: 5px;
+	margin-top: 4px;
+}
+#body-content ul.accordion li.accordion-item.open div img {
+	padding-top: 16px;
+	padding-right: 28px;
+	padding-bottom: 12px;
+}
+#body-content ul.accordion li.accordion-item.open div h3 { margin-top: 12px !important; }
+#body-content ul.accordion li.accordion-item div ul { list-style: disc; }
+#body-content ul.accordion li.accordion-item div ul.beside-image {
+	position: relative;
+	left: 24px;
+}*/
+
+.float-left { float: left; }
+img.float-left,
+.float-left img { padding: 0 38px 30px 0; }
+
+.float-right { float: right; }
+img.float-right,
+.float-right img { padding: 0 0 30px 38px; }
+
+.smaller { font-size: 90%; }
+
+.learnMore {
+	width: 68px;
+	height:	9px;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: url(images/btn_learnMore.gif) no-repeat;
+	margin-left: -1px;
+	margin-top: 15px;
+}
+
+
+/***********************************/
+/*            HOSPITALS            */
+/***********************************/
+
+#hospitals-page .State { clear: left; }
+#hospitals-page .hospital {
+	float: left; 
+	width: 355px;
+}
+#hospitals-page h2 {
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 18px;
+}
+#hospitals-page h3 { margin-top: 0; }
+#hospitals-page .hospital img {
+	float: left;
+	padding-right: 16px;
+	padding-bottom: 34px;
+	border: 0;
+}
+#hospitals-page .hospital p { margin: 0; }
+#hospitals-page .hospital .learnMore { margin-top: 8px; }
+#hospitals-page .hospital .v-outer {
+	width: 220px; 
+	height: 76px;
+	float: left;
+}
+
+/* Individual Hospital Pages*/
+#hospital-header-image {
+	width: 100%;
+	height: 143px;
+	margin-bottom: 24px;
+	background: #e5e5e5 url(images/content/bg_hospital_banner_right.gif) no-repeat top right;
+}
+#hospital-header-image img,
+#hospital-header-image .address { float: left; }
+
+#hospital-header-image .address {
+	padding: 38px 0 0 36px;
+}
+#hospital-header-image .address .bold {
+	font-weight: normal;
+	font-size: 23px;
+}
+#hospital-header-image p {
+	margin: 0;
+	padding: 0;
+}
+
+
+/***********************************/
+/*           MYWELLMONT            */
+/***********************************/
+
+#myWellmont-signout-btn { padding: 14px 15px 32px 15px; }
+
+/* Home */
+
+/*login graphic panel*/
+#mywellmont-home #mywellmont-login-panel {
+	background: url(images/content/mywellmont/bg_home_banner.jpg) no-repeat;
+	height: 155px;
+	padding: 26px 30px;
+	font-size: 11px;
+	color: #ffffff;
+}
+
+#mywellmont-home #mywellmont-login-panel-inner { width: 178px; }
+
+#mywellmont-home #mywellmont-login-panel input.auth {
+	width: 100%;
+	height: 16px;
+	margin-bottom: 9px;
+	border: 1px solid #b7b7b7;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	display: block;
+}
+
+#mywellmont-home #mywellmont-login-buttons { padding-top: 19px; }
+#mywellmont-home #mywellmont-login-buttons div {
+	float: left;
+	width: 50%;
+}
+#mywellmont-home #mywellmont-login-panel a {
+	display: block;
+	line-height: 13px;
+	font-weight: normal;
+	color: #ffffff;
+	font-size: 11px;
+	cursor: pointer;
+}
+#mywellmont-home #mywellmont-login-buttons div.right { text-align: right; }
+#mywellmont-home #mywellmont-login-buttons div.right input {
+	position: relative;
+	top: 2px;
+	left: 3px;
+}
+
+/*forgot password modal*/
+#ctl00_BodyContentPlaceHolderCenter_txtForgotPwd {
+	display: block;
+	width: 200px;
+	margin-bottom: 14px;
+	border: 1px solid #b7b7b7;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+/*below login graphic*/
+/*for horizontal layout as originally designed*/
+#mywellmont-home .item-cell {
+	float: left;
+	width: 229px;
+	padding: 16px 14px 0 0;
+}
+#mywellmont-home .item-cell.first {
+	float: left;
+	clear: both;
+}
+#mywellmont-home .item-cell.last { padding-right: 0; }
+
+#mywellmont-home .item-cell h3 { margin: 13px 0 1px 0; }
+#mywellmont-home .item-cell p {
+	margin: 0;
+	padding: 0;
+}
+
+/*for vertical layout after 6 items being reduced to 4*/
+/*#mywellmont-home .item-cell { clear: both; }
+#mywellmont-home img {
+	float: left;
+	padding: 0 16px 32px 0;
+}
+#mywellmont-home .bottom img { padding-bottom: 0; }*/
+
+
+/* Welcome Page */
+
+#mywellmont-welcome img {
+	float: left;
+	padding: 0 16px 32px 0;
+}
+#mywellmont-welcome h3,
+#mywellmont-welcome p { margin: 0; }
+#mywellmont-welcome a {
+	display: inline-block;
+	padding: 4px 20px 0 0;
+}
+
+/* myWellmont Form Globals */
+
+.mywellmont-form .float-left { padding-right: 20px; }
+
+.mywellmont-form input,
+.mywellmont-form select,
+.mywellmont-form textarea {
+	border: 1px solid #b7b7b7;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	margin: 2px 0 15px 0;
+}
+.mywellmont-form textarea {
+	overflow: auto;
+	width: 100%;
+	height: 60px;
+}
+
+.mywellmont-form .radio-button input {
+	border: none; 
+	margin: 0 0 0 10px;
+}
+.mywellmont-form .radio-button.first input { margin-left: 0; }
+.mywellmont-form .edit-button {
+	margin: 0;
+	padding-left: 10px;
+}
+
+.mywellmont-form .name input { width: 150px; }
+.mywellmont-form .mi input { width: 20px; }
+.mywellmont-form .gender select { width: 80px; }
+.mywellmont-form .date input { width: 68px; }
+.mywellmont-form .phone input { width: 120px; }
+.mywellmont-form .address input { width: 252px; }
+.mywellmont-form .city input { width: 120px; }
+.mywellmont-form .state select { width: auto; }
+.mywellmont-form .zip input { width: 50px; }
+
+.mywellmont-form .width-half { width: 339px; }
+
+.mywellmont-form .width-third { width: 219px; }
+.mywellmont-form .width-third.middle { width: 229px; }
+.mywellmont-form .width-third.last { width: 199px; }
+
+/* Prescription Renewal Form */
+
+/*IE fixes*/
+
+#mywellmont-rx-renew #dvRXnums1-4 input,
+#mywellmont-rx-renew #dvRxnums5-8 input,
+#mywellmont-rx-renew #dvRxnums9-12 input,
+#mywellmont-rx-renew #dvRXnums11-16 input {
+	*position: relative;
+	*top: 14px;
+	*left: 2px;
+}
+
+/* Registration Form */
+#ctl00_BodyContentPlaceHolderCenter_txtPassword_PasswordStrength { display: none; }	/* Hide password strength indicator for now since it doesn't seem to respond to the styles I would like to apply... */
+#mywellmont-register #dvUsername input { width: 160px; }
+#mywellmont-register #dvPassword input,
+#mywellmont-register #dvPassword2 input { width: 130px; }
+
+
+/* Pre Admission Form */
+
+#mywellmont-pre-admission .nature-of-accident input { width: 100%; }
+#mywellmont-pre-admission .nature-of-accident #ctl00_BodyContentPlaceHolderCenter_lblAccChars { display: block; margin-top: -10px; }
+
+
+/***********************************/
+/*        FIND A PHYSICIAN         */
+/***********************************/
+
+#find-a-physician #searchForm {
+	background: #e6e6e6 url(images/content/physcian_locator/bg_phys_dir_top.gif) left top no-repeat;
+	width: 718px;
+	color: #3e3e3e;
+}
+#find-a-physician #searchForm-inner {
+	background: transparent url(images/content/physcian_locator/bg_phys_dir_bottom.gif) left bottom no-repeat; 
+	padding: 25px 25px 20px 25px;
+}
+#find-a-physician .fieldContainer {
+	float: left;
+	width: 231px;
+	height: 52px;
+	*height: 30px;
+	_margin-bottom: -12px;
+}
+#find-a-physician .fieldContainer.last { width: 204px; }
+#find-a-physician label {
+	display: block;
+	margin-bottom: 3px; 
+}
+#find-a-physician input { height: 15px; }
+#find-a-physician select { height: 19px; }
+#find-a-physician input,
+#find-a-physician select {
+	width: 204px;
+	border: 1px solid #b7b7b7;	
+	font-size: 12px;
+}
+#find-a-physician .submit-btn {
+	width: auto;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	border: none;
+	position: relative;
+	top: 5px;
+	*top: 3px;
+}
+#find-a-physician #searchForm .instructions {
+	float: left;
+	width: 586px;
+	padding-top: 14px;
+}
+
+/*results page*/
+#find-a-physician #results table {
+	width: 100%;
+	margin-top: 20px;
+}
+#find-a-physician #ctl00_BodyContentPlaceHolderCenter_noResultsMessage {
+	padding-top: 20px;
+	font-weight: bold;
+}
+#find-a-physician #results table thead td {
+	font-weight: bold;
+	padding-bottom: 10px;
+	font-size: 110%;
+}
+#find-a-physician #results table td { padding: 5px; }
+#find-a-physician #results table .altRow { background-color: #e6e6e6; }
+
+/*doctor detail page*/
+#find-a-physician-detail
+{
+width: 820px;
+}
+
+#find-a-physician-detail h1 {
+	float: left;
+	
+}
+#find-a-physician-detail h2 {
+	clear: left;
+	padding: 0 0 10px 0;
+	margin: 0;
+}
+#find-a-physician-detail a.new-search {
+	float: left;
+	position: relative;
+	top: 13px;
+	left: 30px;
+font-weight: 100;
+}
+#find-a-physician-detail #photo { float: left; padding: 6px 20px 0 0; width: 160px;}
+#find-a-physician-detail #PhysInfo 
+{
+	float: left;
+	margin: 0;
+	width: 560px;
+}
+#find-a-physician-detail #PhysInfo h2
+{
+margin: 0 0 10px 0;
+padding: 0;
+font-size: 20px;
+}
+#find-a-physician-detail #PhysInfo table td {
+vertical-align: top;
+padding: 0 50px 15px 0;
+}
+#find-a-physician-detail #PhysInfo table td h4 {
+padding: 0;
+margin: 0;
+font-size: 12px;
+}
+.EduTitle {
+clear: both;
+padding: 0 0 0 0;
+float: left;
+}
+.EduTitle dd {
+width: 320px;
+*width: 170px;
+}
+.EduTitle h4 {
+width: 134px;
+float: left;
+}
+.EduData {
+float: left;
+}
+#find-a-physician-detail dl, #find-a-physician-detail dd 
+{
+margin: 0;
+padding: 0;
+}
+#find-a-physician-detail #PhysDetails
+{
+width: 410px;
+}
+
+
+#find-a-physician-detail #PhysDetails h3 {
+margin: 20px 0 5px 0;
+font-size: 15px;
+color: #2272AB
+}
+#find-a-physician-detail #PhysDetails h4 {
+margin: 10px 0 0 0;
+}
+#find-a-physician-detail #PhysDetails dd {
+margin: 0 0 0 0;
+font-size: 12px;
+}
+#find-a-physician-detail #LeftCol 
+{
+	float: left;
+	width: 200px;
+}
+#find-a-physician-detail #RightCol 
+{
+	float: right;
+	width: 200px;
+}
+
+#find-a-physician-detail #Videos {
+width: 260px;
+float: left;
+}
+#find-a-physician-detail #Videos h3{
+margin: 0 0 15px 15px;
+}
+#find-a-physician-detail #Videos #FlashHolder{
+margin: 0 0 25px 15px;
+}
+#find-a-physician-detail #Videos #OtherVideos 
+{
+margin: 15px 0 35px 0;
+
+}
+#find-a-physician-detail #Videos #OtherVideos a
+{
+margin: 0;
+height: 30px;
+display: block;
+background: url('/css/images/layout/eCamera.jpg') no-repeat;
+padding: 15px 0 0 50px;
+}
+#find-a-physician-detail #Videos #Podcasts a
+{
+margin: 0;
+height: 30px;
+display: block;
+background: url('/css/images/layout/podcasticon.jpg') no-repeat;
+padding: 15px 0 0 50px;
+}
+#find-a-physician-detail #Websites
+{
+margin: 0;
+background: url('/css/images/layout/eMouse.jpg') left center no-repeat;
+padding: 0 0 0 50px;
+margin: 0 0 45px 0;
+}
+#find-a-physician-detail #Websites a 
+{
+	display: block;
+}
+input#FromSpot {
+	border: 1px solid #b7b7b7;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	padding: 3px;
+	height: 15px;
+}
+input#GetDirectionsButton {
+	padding: 0;
+	margin: 0;
+	margin-left: 4px;
+	margin-bottom: -7px;
+	*margin-bottom: -5px;
+}
+#map_canvas {
+	border: 1px solid #b7b7b7;
+	width: 500px;
+	height: 500px;
+	float:left;
+}
+#map_canvas .gmnoprint {
+	font-size: 95%;
+	line-height: 1.4em;
+}
+
+/*small pluggable version*/
+
+.find-a-physician-small-outer {
+	height: 70px;
+	background: #e6e6e6 url(images/content/physcian_locator/bg_phys_dir_small_right.gif) no-repeat top right;
+	margin-bottom: 8px;
+	*margin-bottom: 0;
+	float: left;
+}
+.find-a-physician-small-inner {
+	padding: 16px 29px;
+	height: 38px;
+	background:  url(images/content/physcian_locator/bg_phys_dir_small_left.gif) no-repeat top left;
+	float: left;
+}
+.find-a-physician-small-inner #speciality {
+	border: 1px solid #b7b7b7;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	margin: 0 15px 0 10px;
+	width: 179px;
+}
+.find-a-physician-small-inner #searchButton {
+	position: relative;
+	top: 7px;
+}
+
+
+/***********************************/
+/*            CAREERS              */
+/***********************************/
+
+#careers-page .career-main-top-block {
+	float: left;
+	width: 229px;
+	height: 356px;
+	list-style: none;
+	padding: 0;
+	margin: 0 15px 20px 0;
+	*margin-bottom: 5px;
+	background: #427191 url(images/content/careers/bg_column_bottom.gif) left bottom no-repeat;
+}
+#careers-page .career-main-top-block.last { margin-right: 0; }
+#careers-page .career-main-top-block li {
+	margin: 0;
+	padding: 0;
+	line-height: 19px;
+}
+#careers-page .career-main-top-block a {
+	color: #ffffff;
+	font-weight: normal;
+}
+#careers-page .career-main-top-block a:hover { color: #abdef6; }
+#careers-page .career-main-top-block h2 {
+	color: #85bfda;
+	margin: 0;
+	padding: 224px 0 18px 0;
+	background-repeat: no-repeat;
+}
+#careers-page .career-main-top-block a,
+#careers-page .career-main-top-block h2 {
+	padding-left: 26px;
+}
+#careers-page #careers-physicians h2 { background-image: url(images/content/careers/bg_physicians.jpg); }
+#careers-page #careers-nurses h2 { background-image: url(images/content/careers/bg_nurses.jpg); }
+#careers-page #careers-support h2 { background-image: url(images/content/careers/bg_support_staff.jpg); }
+
+
+/***********************************/
+/*        MEDICAL SERVICES         */
+/***********************************/
+
+#med-services-page #med-services-quicklinks {
+	padding-top: 28px;
+	margin-bottom: 38px;
+	_margin-bottom: 28px;
+}
+#med-services-page #med-services-quicklinks .item {
+	width: 359px; 
+	height: 76px;
+	float: left;
+	font-size: 11px;
+	padding-bottom: 24px;
+	*margin-bottom: -30px;
+}
+#med-services-page #med-services-quicklinks .item b { font-size: 12px; }
+#med-services-page #med-services-quicklinks .item small {
+	display: block;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 13px;
+}
+#med-services-page #med-services-quicklinks .item a {	
+	margin: 0;
+	padding: 0;
+	padding-left: 126px;
+	color: #575757;
+	text-decoration: none;
+	display: block;
+	width: 170px;
+	height: 76px;	
+}
+#med-services-page #med-services-quicklinks .item a:hover b { color: #2673a8; }
+#med-services-page #med-services-quicklinks .item a:hover { _color: #2673a8; }
+#med-services-page #med-services-quicklinks #med-services-cardio { background: url(images/content/medical_services/thumb_cardiovascular.jpg) no-repeat; }
+#med-services-page #med-services-quicklinks #med-services-cancer { background: url(images/content/medical_services/thumb_cancer.jpg) no-repeat; }
+#med-services-page #med-services-quicklinks #med-services-emergency { background: url(images/content/medical_services/thumb_emergency.jpg) no-repeat; }
+#med-services-page #med-services-quicklinks #med-services-family { background: url(images/content/medical_services/thumb_family_medicine.jpg) no-repeat; }
+#med-services-page #med-services-quicklinks #med-services-neuro { background: url(images/content/medical_services/thumb_neurology.jpg) no-repeat; }
+#med-services-page #med-services-quicklinks #med-services-ortho { background: url(images/content/medical_services/thumb_orthopedics.jpg) no-repeat; }
+
+
+/***********************************/
+/*       PATIENTS & VISITORS       */
+/***********************************/
+
+#patient-visitor-page .patient-visitor-quicklinks {
+	list-style: none;
+	margin: -5px 0 0 0;
+	padding: 0 80px 20px 0;
+	float: left;
+}
+#patient-visitor-page .patient-visitor-quicklinks li {
+	padding: 0;
+	margin: 0;
+	line-height: 21px;
+}
+#patient-visitor-page .patient-visitor-quicklinks.last { padding-right: 0; }
+#patient-visitor-page .patient-visitor-quicklinks h2 {
+	font-size: 18px;
+	margin-bottom: 0;
+	padding-bottom: 12px;
+}
+#patient-visitor-page .patient-visitor-quicklinks .readMore {
+	position: relative;
+	top: 8px;
+	*top: 1px;
+}
+
+
+/***********************************/
+/*         CLINICAL TRIALS         */
+/***********************************/
+table.clinicalTrialsTbl, .clinicalTrialsTbl
+{
+    width:100%;
+    border-right:1px solid #d9d9d9;
+    border-bottom:1px solid #d9d9d9;
+       
+}
+
+table.clinicalTrialsTbl tr td
+{
+    vertical-align:top;  
+}
+
+table.clinicalTrialsTbl th
+{
+    background: #ebebeb; 
+    border-top:1px solid #d9d9d9;
+    border-bottom:1px solid #ffffff;
+    border-left:1px solid #d9d9d9;
+    font-weight:bold;
+    font-size:14px;
+    padding:11px;
+    text-align:left; 
+}
+
+table.clinicalTrialsTbl tr.trialCategory td
+{
+    background: #dfe4e8; 
+    border-top:1px solid #aab7bf;
+    border-bottom:1px solid #aab7bf;
+    border-left:1px solid #d9d9d9;
+    font-weight:bold;
+    color:#206c9e;
+    font-size:14px;
+    padding:11px;
+    text-align:left; 
+}
+
+table.clinicalTrialsTbl tr.trial td
+{
+    
+    border-left:1px solid #d9d9d9;
+    font-size:11px;
+    padding:11px;
+    text-align:left;
+}
+
+table.clinicalTrialsTbl tr.even td
+{
+    background: #f2f2f2;
+    border-top:1px solid #d9d9d9;
+    border-bottom:1px solid #d9d9d9;
+}
+
+table.clinicalTrialsTbl tr.last td
+{
+    border-bottom:none !important;    
+}
+
+
+/***********************************/
+/*         SEARCH RESULTS          */
+/***********************************/
+
+#search-results th { display: none; }
+#search-results h3 a { font-size: 14px; }
+#search-results .ResultStamp { font-style: italic; }
+
+
+/***********************************/
+/*         CONTACT US FORM         */
+/***********************************/
+
+#contact-us #contactform-outer {
+	margin-top: 16px;
+	background: #e6e6e6 url(images/content/physcian_locator/bg_phys_dir_top.gif) left top no-repeat;
+}
+#contact-us .tblContact {
+	width: 718px;
+	background: transparent url(images/content/physcian_locator/bg_phys_dir_bottom.gif) left bottom no-repeat; 
+	color: #3e3e3e;	
+}
+#contact-us .tblContact td { padding: 0 20px; }
+
+#contact-us .tblContact td.left-column { width: 50%; }
+
+#contact-us .tblContact .top { padding-top : 20px; }
+
+#contact-us .tblContact input,
+#contact-us .tblContact select,
+#contact-us .tblContact textarea {
+	margin: 2px 0 12px 0;
+	border: 1px solid #b7b7b7;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 12px;
+}
+#contact-us .tblContact input { width: 314px; }
+
+#contact-us .tblContact select {
+	width: 675px;
+	*width: 679px;
+}
+#contact-us .tblContact textarea {
+	width: 673px;
+	height: 60px;
+	overflow: auto;
+}
+#contact-us .tblContact .submit {
+	text-align: right;
+	padding-bottom: 20px;
+}
+#contact-us .tblContact .submit input {
+	width: auto;
+	margin: 0;
+}
+
+
+/***********************************/
+/*      WELLMONT FOCUS VIDEOS      */
+/***********************************/
+
+.wellmont-focus table {
+	padding: 18px 0 6px 0;
+	width: 100%;
+	margin-left: -2px;
+}
+.wellmont-focus td { vertical-align: top; }
+.wellmont-focus td p,
+.wellmont-focus td h3 {
+	position: relative;
+	top: -6px;
+}
+.wellmont-focus td img { padding: 0 15px 10px 0; }
+
+
+/***********************************/
+/*           HOW WE RATE           */
+/***********************************/
+
+.how-we-rate .chkAlign {
+	margin: 3px;
+	padding: 0;
+	display: block;
+	margin-bottom: -10px;
+}
+.how-we-rate .SectionHeader {
+	color: #484848;
+	font-weight: bold;
+}
+.how-we-rate .accordionHeader {
+	color: #2673a8;
+	background-color: #eeeeee;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}
