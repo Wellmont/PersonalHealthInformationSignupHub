@@ -1,0 +1,28 @@
+#FloatBubble{display: none;position: absolute;z-index: 3200;}
+#EkBubbleTable{width:400px;border:0px;text-align:left;}
+#EkBubbleData{width: 360px; overflow: auto;background-color:#ffffff;}
+#EkCloseBubbleIcon{text-align: right;background-color:#ffffff;}
+#EkClose{height:11px;width:11px;}
+#EkTop{height:52px;width:247px;background-image:url('../../images/application/bubble/top.gif');}
+#EkTopR{height:52px;width:21px;background-image:url('../../images/application/bubble/topr.gif');}
+#EkTopL{height:52px;width:21px;background-image:url('../../images/application/bubble/topl.gif');}
+#EkBotR{height:52px;width:21px;background-image:url('../../images/application/bubble/botr.gif');}
+#EkBotL{height:52px;width:21px;background-image:url('../../images/application/bubble/botl.gif');}
+#EkTopTile{background-image:url('../../images/application/bubble/toptile.gif');}
+#EkCenL{background-image:url('../../images/application/bubble/cenl.gif');}
+#EkCenR{background-image:url('../../images/application/bubble/cenr.gif');}
+#EkBot{background-image:url('../../images/application/bubble/bot.gif');}
+#FloatBubbleT{display: none;position: absolute;z-index: 3200;}
+#EkBubbleTableT{width:400px;border:0px;TEXT-ALIGN:left;}
+#EkBubbleDataT{width: 360px; overflow: auto;background-color:#ffffff;}
+#EkCloseBubbleIconT{TEXT-ALIGN: right;background-color:#ffffff;}
+#EkCloseT{height:11px;width:11px;}
+#EkTopT{background-image:url('../../images/application/bubble/topt.gif');}
+#EkTopRT{height:52px;width:21px;background-image:url('../../images/application/bubble/topr.gif');}
+#EkTopLT{height:52px;width:21px;background-image:url('../../images/application/bubble/topl.gif');}
+#EkBotRT{height:52px;width:21px;background-image:url('../../images/application/bubble/botr.gif');}
+#EkBotLT{height:52px;width:21px;background-image:url('../../images/application/bubble/botl.gif');}
+#EkBotTile{background-image:url('../../images/application/bubble/bottile.gif');}
+#EkCenLT{background-image:url('../../images/application/bubble/cenl.gif');}
+#EkCenRT{background-image:url('../../images/application/bubble/cenr.gif');}
+#EkBotT{height:52px;width:247px;background-image:url('../../images/application/bubble/bott.gif');}
